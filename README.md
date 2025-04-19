@@ -1,0 +1,104 @@
+# Coding-Challenge-1MV23CS191
+
+
+1st problem : Fibonacci series 
+#include <stdio.h>
+
+int main() {
+    int n, a = 0, b = 1, next;
+    printf("Enter the number of Fibonacci numbers: ");
+    scanf("%d", &n);
+    for (i=0;i<n;i++){
+        printf("%d",a)
+        next=a+b;
+        a=b;
+        b=next;
+      }
+      return 0;
+        
+}
+
+
+
+2nd problem : 
+prime numbers till n
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n, isPrime;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+    for(int num=2;num<=n;num++){
+        isPrime=i
+        for(int i=2;i<=sqrt(num);i++){
+            if(num%i==0){
+                isPrime=0;
+                break;
+              }
+        }
+        if(isPRime)
+           printf("%d", num);
+    }
+            return 0;
+            
+
+    
+}
+
+
+
+
+
+
+
+ problem 3 
+ vowel and Consonant  counter 
+ #include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char str[100];
+    int vowels = 0, consonants = 0;
+     printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+    for (int i = 0; str[i] != '\0'; i++) {
+        char ch = tolower(str[i]);
+        if (isalpha(ch)) {
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+                vowels++;
+            else
+                consonants++;
+        }
+    }
+    printf("Vowels: %d\n", vowels);
+    printf("Consonants: %d\n", consonants);
+    return 0;
+}
+
+
+
+problem 4 
+center aligned star triangle 
+#include <stdio.h>
+
+int main() {
+    int n, spaces, stars;
+    printf("Enter the number of rows: ");
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++) {
+        spaces = n - i;
+        stars = 2 * i - 1;
+        for (int j = 0; j < spaces; j++)
+            printf(" ");
+        for (int j = 0; j < stars; j++)
+            printf("*");
+        printf("\n");
+    }
+
+  return 0;
+}
+
+
+
